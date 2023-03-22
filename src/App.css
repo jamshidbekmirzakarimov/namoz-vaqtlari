@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url(https://img.freepik.com/premium-vector/ramadan-kareem-background-wallpaper-islamic-realistic-element-muslim-background-premium-vector_505522-259.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 1000px;
+}
+
+.App{
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.158);
+  box-shadow: 0px 0px 10px 5px #00000038;
+}

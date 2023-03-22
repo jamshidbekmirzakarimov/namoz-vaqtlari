@@ -20,11 +20,11 @@ const Inputs = ({ prayTime, setPrayTime }) => {
       <Form.Item label="Bugungi namoz vaqti">
         <Button>Bugungi namoz vaqtlari</Button>
       </Form.Item>
-      <br />
       <Form.Item label="Kunlik namoz vaqti">
         <DatePicker onChange={(e) => onChangeFunc(e)} />
       </Form.Item>
-      <Form.Item label="Viloyatni tanlang">
+      <div className="d-flex flex-column mb-4">
+      <span>Viloyat</span>
         <Select
           className="region"
           onChange={(e) => onChangeRegion(e)}
@@ -45,7 +45,7 @@ const Inputs = ({ prayTime, setPrayTime }) => {
           <Option value="Xorazm">Xorazm</Option>
           <Option value="Jizzax">Jizzax</Option>
         </Select>
-      </Form.Item>
+        </div>
     </div>
   );
 };

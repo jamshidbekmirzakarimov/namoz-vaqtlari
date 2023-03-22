@@ -3,13 +3,12 @@ import { Space, Table, Tag } from "antd";
 const Card = ({ weekday, day, month, region, times }) => {
   return (
     <>
-      <table class="table">
-        <thead>
+      <table class="table col-6">
+        <thead className=" table-dark">
           <tr>
             <th scope="col">Viloyat</th>
-            <th scope="col">day</th>
+            <th scope="col">data</th>
             <th scope="col">weekday</th>
-            <th scope="col">month</th>
             <th scope="col">Tong saharlik</th>
             <th scope="col">Quyosh</th>
             <th scope="col">Peshin</th>
@@ -21,9 +20,8 @@ const Card = ({ weekday, day, month, region, times }) => {
         <tbody>
           <tr>
             <td>{region}</td>
-            <td>{day}</td>
+            <td>{day}.{month}</td>
             <td>{weekday}</td>
-            <td>{month}</td>
             <td><mark>{times?.tong_saharlik}</mark></td>
             <td>{times?.quyosh}</td>
             <td>{times?.peshin}</td>
